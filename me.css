@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Roboto:ital,wght@0,300;0,500;1,100;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.width{
+    max-width: 1250px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* Navigation Bar Styling */
+.navBar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 18px;
+    transition: all 0.2s ease;
+}
+.navBar.sticky{
+    padding: 20px 0;
+    background: rgb(83, 118, 135);
+}
+.navBar .leadTo li a{
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 480px;
+    transition: color 0.2s ease;
+    color: white;
+}
+.navBar .width .leadTo li a:hover{
+    color: rgb(166, 165, 232);
+}
+.navBar .width .leadTo{
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+/* leadTo button style */
+ .leadToBtn{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; 
+} 
+
+/* Intro Section Style */
+.intro{
+    display: flex;
+    background: url("images/8.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    min-height: 480px;
+}
+.intro .width{
+    margin: auto 0 auto 30px;
+}
+.intro .introContent .text1{
+    font-size: 26px;
+}
+.intro .introContent .text2{
+    font-size: 50px;
+    font-weight: 500px;
+}
+.intro .introContent .text3{
+    font-size: 35px;
+    margin: 4px 0;
+}
+.intro .introContent .text3 span{
+    color: rgb(134, 132, 255);
+    font-weight: 500px;
+}
+.intro .introContent a{
+    display: inline-block;
+    background: rgb(148, 136, 136);
+    color: white;
+    font-size: 25px;
+    padding: 8px 25px;
+    margin-top: 15px;
+    border-radius: 30px;
+    border: 2px solid rgb(143, 143, 143); 
+    transition: all 0.4s ease;
+}
+.intro .introContent a:hover{
+    color: aliceblue;
+    background: none;
+}
+
+
+
+/* About/Skills Style */
+section{
+    padding: 50px 0;
+}
+section .heading{
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+} 
+section .heading::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 100px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .aboutContent .text{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+section .aboutContent .text span{
+    color: rgb(51, 119, 192);
+}
+section .aboutContent p{
+    text-align: justify;
+}
+
+/* Skills */
+.skills .skillsContent{
+    display: flex;
+}
+.skills p{
+    margin-bottom: 20px;
+}
+.skills .skillsContent .left{
+    width: calc(40%);
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.skills .skillsContent .right{
+    width: calc(50%);
+    right: 50%;
+}
+.skills .skillsContent .left .blocks li{
+    list-style: none;
+    background-color: rgb(179, 177, 177);
+    padding: 8px;
+    margin: 5px;
+    display: inline-block;
+}
+/* Health Bars */
+.skills .skillsContent .right{
+    margin-right: 50px;
+}
+.skills .skillsContent .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skillsContent .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skillsContent .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skillsContent .right .bar{
+    height: 5px;
+    width: 100%;
+    background: lightblue;
+    position: relative;
+}
+.skills .skillsContent .right .bar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(19, 56, 75);
+}
+.skillsContent .right .C::before{
+    width: 90%;
+}
+.skillsContent .right .Java::before{
+    width: 80%;
+}
+.skillsContent .right .HTML5::before{
+    width: 90%;
+}
+.skillsContent .right .CSS3::before{
+    width: 85%;
+}
+.skillsContent .right .Javascript::before{
+    width: 83%;
+}
+
+
+/* Education Section Styling */
+.education .educationContent .collapsible {
+    background-color: rgb(103, 136, 153);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .education .educationContent .active, .collapsible:hover {
+    background-color: rgb(66, 95, 109);
+  }
+  
+  .education .educationContent .content {
+    padding: 0 18px;
+    margin: 15px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+
+  /* Projects Styling */
+  .projects img{
+      width: 100%;
+      margin: 20px 0;
+  }
+  .projects p{
+      margin-top: 20px;
+  }
+
+  /* Experience Section Styling */
+  .experience h3{
+      margin-bottom: 20px;
+  }
+.experience .experienceContent .collapsible {
+    background-color: rgb(103, 136, 153);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .experience .experienceContent .active, .collapsible:hover {
+    background-color: rgb(66, 95, 109);
+  }
+  
+  .experience .experienceContent .content {
+    padding: 0 18px;
+    margin: 15px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+  /* Contact Me Section Style */
+  .contact .contactContent form .field{
+      margin: 15px 0;
+      height: 45px;
+      width: 40%;
+      margin-left: 30%;
+  }
+  .contact .contactContent form .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    font-size: 15px;
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+  .contact .contactContent form .field textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    font-size: 15px;
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+  .contact .contactContent form .field button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    font-size: 15px;
+    margin: 5px 0;
+    padding: 5px 0;
+    margin-bottom: 50px;
+    background-color: rgb(148, 146, 146);
+    transition: 0.4s ease;
+    cursor: pointer;
+  }
+  .contact .contactContent form .field button:hover{
+    background-color: white
+  }
+
+  /* Footer Style */
+  footer{
+      display: flex;
+      background: gray;
+      padding: 40px 25px;
+      margin-top: 300px;
+      justify-content: space-between;
+  }
+
+
+  /* Responsive Media  */
+ @media (max-width: 850px) {
+    .leadToBtn{
+        display: block;
+        color: white;
+        position: fixed;
+        z-index: 999;
+    } 
+    .leadToBtn i.active:before{
+        content: "\f00d";
+    }
+    .navBar .width .leadTo {
+        display: inline-block;
+        /* z-index: 999; */
+    }
+    .width{
+        padding: 0 50px;
+    }    
+    .navBar .leadTo{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: rgb(0, 0, 0);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.4s ease;
+    }
+    .navBar .leadTo.active{
+        left: 0;
+    }
+    .navBar .leadTo li{
+        display: block;
+    } 
+    .navBar .leadTo li a{
+        display: block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .intro .introContent .text2{
+        font-size: 45px;
+    }
+    .intro .introContent .text3{
+        font-size: 30px;
+    }
+    .intro .introContent a{
+        font-size: 20px;        
+    }    
+    .navBar.sticky{
+        padding: 0;
+        background: rgb(83, 118, 135);
+    }
+    .skills .skillsContent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills p{
+        align-items: center;
+        justify-content: center;
+    }
+    .skills .skillsContent .left{
+        width: calc(40%);
+        margin-top: 30px;
+        margin-left: 0;
+        margin-right: 40px;
+    }
+    .contact .contactContent form .field{
+        margin: 15px 0;
+        height: 45px;
+        width: 80%;
+        margin-left: 10%;
+    }
+}  
