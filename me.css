@@ -468,16 +468,17 @@ section .aboutContent p{
     }
     .projects .next{
         display: inline-block;
+        padding: 10px 10px;
     }
     .projects .leftcol{
         margin-left: 0;
-        width: calc(100%);
+        width: calc(80%);
     }
     .projects .rightcol{
-        width: calc(50%);
+        width: calc(40%);
     }
     .projects img{
-        width: 200%;
+        width: 250%;
         margin-left: 0%;
         margin-top: 50px;
     }
