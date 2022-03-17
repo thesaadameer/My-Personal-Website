@@ -455,9 +455,9 @@ section .aboutContent p{
         justify-content: center;
     }
     .skills .skillsContent .left{
-        width: calc(80%);
+        width: calc(90%);
         margin-top: 30px;
-        margin-left: 0;
+        margin-left: 30px;
         margin-right: 40px;
     }
     .contact .contactContent form .field{
