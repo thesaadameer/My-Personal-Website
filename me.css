@@ -5,14 +5,40 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .width{
     max-width: 1250px;
     padding: 0 80px;
     margin: auto;
 }
-
+.scrollUpBtn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(70, 70, 70);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #f1f1f1;
+    z-index: 999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+.scrollUpBtn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+    
+}
 /* Navigation Bar Styling */
 .navBar{
     position: fixed;
@@ -108,6 +134,7 @@ section .heading{
     font-weight: 500;
     margin-bottom: 40px;
     padding-bottom: 20px;
+    margin-top: 20px;  /* Added by SG */
 } 
 section .heading::before{
     content: "";
@@ -129,6 +156,12 @@ section .aboutContent .text span{
 }
 section .aboutContent p{
     text-align: justify;
+}
+
+/* About Style */
+.about{
+    background-color: rgb(163, 186, 187);
+    margin-top: 50px;
 }
 
 /* Skills */
@@ -202,6 +235,9 @@ section .aboutContent p{
 
 
 /* Education Section Styling */
+.education{
+    background-color: rgb(163, 186, 187);
+}
 .education .educationContent .collapsible {
     background-color: rgb(103, 136, 153);
     color: white;
@@ -229,15 +265,43 @@ section .aboutContent p{
 
 
   /* Projects Styling */
+  .projects .next{
+      display: flex;
+      padding: 10px 100px;
+  }
+  .projects .projectsContent{
+    background-color: rgb(164, 197, 193);
+    padding: 0;
+  }
+  .projects .next{
+    padding-bottom: 40px;
+  }
+  .projects .leftcol{
+      margin-left: 0;
+      width: calc(40%);
+  }
+  .projects .rightcol{
+      width: calc(30%);
+  }
+  .projects .invertedbg{
+      background-color: lightgrey;
+  }
   .projects img{
-      width: 100%;
-      margin: 20px 0;
+      width: 200%;
+      margin-left: 50px;
+      margin-top: 50px;
   }
   .projects p{
       margin-top: 20px;
   }
+  .projects h3{
+      margin-top: 60px;
+  }
 
   /* Experience Section Styling */
+  .experience{
+    background-color: rgb(163, 186, 187);
+  }
   .experience h3{
       margin-bottom: 20px;
   }
@@ -279,7 +343,7 @@ section .aboutContent p{
     border: 1px solid gray;
     font-size: 15px;
     margin: 5px 0;
-    padding: 5px 0;
+    padding: 5px 5px;
   }
   .contact .contactContent form .field textarea{
     height: 100%;
@@ -287,31 +351,34 @@ section .aboutContent p{
     border: 1px solid gray;
     font-size: 15px;
     margin: 5px 0;
-    padding: 5px 0;
+    padding: 5px 5px;
   }
   .contact .contactContent form .field button{
     height: 100%;
     width: 100%;
-    border: 1px solid gray;
+    border: 1px solid rgb(163, 186, 187);
     font-size: 15px;
     margin: 5px 0;
     padding: 5px 0;
     margin-bottom: 50px;
-    background-color: rgb(148, 146, 146);
+    background-color: rgb(163, 186, 187);
     transition: 0.4s ease;
     cursor: pointer;
   }
   .contact .contactContent form .field button:hover{
-    background-color: white
+    background-color: lightblue;
   }
 
   /* Footer Style */
   footer{
       display: flex;
-      background: gray;
-      padding: 40px 25px;
+      background: rgb(74, 93, 94);
+      padding: 30px 25px;
       margin-top: 300px;
       justify-content: space-between;
+  }
+  footer .socials{
+      margin-right: 60px;
   }
 
 
@@ -319,10 +386,19 @@ section .aboutContent p{
  @media (max-width: 850px) {
     .leadToBtn{
         display: block;
-        color: white;
+        color: rgb(100, 99, 99);
         position: fixed;
         z-index: 999;
-    } 
+        border: 2px solid rgb(179, 187, 189);
+        border-radius: 5px;
+        padding: 0 5px;
+        background-color: lightgray;
+        margin-top: 5px;
+    }
+    .leadToBtn:hover{
+        background: none;
+        transition: all 0.4s ease;
+    }
     .leadToBtn i.active:before{
         content: "\f00d";
     }
@@ -344,9 +420,11 @@ section .aboutContent p{
         padding-top: 80px;
         transition: all 0.4s ease;
     }
-    .navBar .leadTo.active{
-        left: 0;
-    }
+
+
+    .showNav { left: 0 !important; }
+
+    
     .navBar .leadTo li{
         display: block;
     } 
@@ -377,7 +455,7 @@ section .aboutContent p{
         justify-content: center;
     }
     .skills .skillsContent .left{
-        width: calc(40%);
+        width: calc(80%);
         margin-top: 30px;
         margin-left: 0;
         margin-right: 40px;
@@ -387,5 +465,20 @@ section .aboutContent p{
         height: 45px;
         width: 80%;
         margin-left: 10%;
+    }
+    .projects .next{
+        display: inline-block;
+    }
+    .projects .leftcol{
+        margin-left: 0;
+        width: calc(100%);
+    }
+    .projects .rightcol{
+        width: calc(50%);
+    }
+    .projects img{
+        width: 200%;
+        margin-left: 0%;
+        margin-top: 50px;
     }
 }  

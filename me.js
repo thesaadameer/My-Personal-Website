@@ -8,11 +8,32 @@ $(document).ready(function(){
         else{
             $('.navBar').removeClass('sticky');
         }
+        if(this.scrollY > 500){
+            $('.scrollUpBtn').addClass("show");
+        }
+        else{
+            $('.scrollUpBtn').removeClass("show");
+        }
+    });
+
+    //Slide Up Script
+    $('.scrollUpBtn').click(function(){
+        $('html').animate({scrollTop: 0});
+        $('html').css("scrollBehaviour", "auto");
+    });
+
+    $('.navBar .leadTo li a').click(function(){
+        //smooth scroll on menu items click
+        $('html').css("scrollBehavior", "smooth");
+
+        // Added by SG
+        $('.navBar .leadTo').removeClass("showNav");
+        $('.leadToBtn i').removeClass("active");
     });
 
     //dropdown menu
     $('.leadToBtn').click(function(){
-        $('.navBar .leadTo').toggleClass("active");
+        $('.navBar .leadTo').toggleClass("showNav");
         $('.leadToBtn i').toggleClass("active");
     });
 
@@ -47,6 +68,5 @@ $(document).ready(function(){
         } 
     });
     }
-
 
 })
