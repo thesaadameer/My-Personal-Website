@@ -471,7 +471,7 @@ section .aboutContent p{
         padding: 10px 10px;
     }
     .projects .leftcol{
-        margin-left: 0;
+        margin-left: 30px;
         width: calc(80%);
     }
     .projects .rightcol{
