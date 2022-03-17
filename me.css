@@ -134,7 +134,7 @@ section .heading{
     font-weight: 500;
     margin-bottom: 40px;
     padding-bottom: 20px;
-    margin-top: 20px;  /* Added by SG */
+    margin-top: 20px;  
 } 
 section .heading::before{
     content: "";

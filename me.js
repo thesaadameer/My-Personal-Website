@@ -26,7 +26,6 @@ $(document).ready(function(){
         //smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
 
-        // Added by SG
         $('.navBar .leadTo').removeClass("showNav");
         $('.leadToBtn i').removeClass("active");
     });
