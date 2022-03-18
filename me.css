@@ -463,6 +463,7 @@ section .aboutContent p{
     }
     .skills .skillsContent .right{
         width: 70%;
+        margin-right: 0;
     }
     .contact .contactContent form .field{
         margin: 15px 0;
