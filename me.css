@@ -217,7 +217,7 @@ section .aboutContent p{
     height: 100%;
     left: 0;
     top: 0;
-    background: rgb(19, 56, 75);
+    background: rgb(64, 255, 87);
 }
 .skillsContent .right .C::before{
     width: 90%;
@@ -462,7 +462,7 @@ section .aboutContent p{
         margin-right: 40px;
     }
     .skills .skillsContent .right{
-        width: 60%;
+        width: 70%;
     }
     .contact .contactContent form .field{
         margin: 15px 0;
