@@ -461,6 +461,9 @@ section .aboutContent p{
         margin-left: 30px;
         margin-right: 40px;
     }
+    .skills .skillsContent .right{
+        width: 60%;
+    }
     .contact .contactContent form .field{
         margin: 15px 0;
         height: 45px;
