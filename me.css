@@ -134,7 +134,7 @@ section .heading{
     font-weight: 500;
     margin-bottom: 40px;
     padding-bottom: 20px;
-    margin-top: 20px;  
+    margin-top: 20px;  /* Added by SG */
 } 
 section .heading::before{
     content: "";
@@ -167,9 +167,11 @@ section .aboutContent p{
 /* Skills */
 .skills .skillsContent{
     display: flex;
+    justify-content: space-evenly;
 }
 .skills p{
     margin-bottom: 20px;
+    margin-left: 30px;
 }
 .skills .skillsContent .left{
     width: calc(40%);
@@ -177,7 +179,7 @@ section .aboutContent p{
     margin-left: 20px;
 }
 .skills .skillsContent .right{
-    width: calc(50%);
+    width: calc(30%);
     right: 50%;
 }
 .skills .skillsContent .left .blocks li{
@@ -267,7 +269,7 @@ section .aboutContent p{
   /* Projects Styling */
   .projects .next{
       display: flex;
-      padding: 10px 100px;
+      padding: 10px 20px;
   }
   .projects .projectsContent{
     background-color: rgb(164, 197, 193);
@@ -281,7 +283,7 @@ section .aboutContent p{
       width: calc(40%);
   }
   .projects .rightcol{
-      width: calc(30%);
+      width: calc(25%);
   }
   .projects .invertedbg{
       background-color: lightgrey;
@@ -424,7 +426,7 @@ section .aboutContent p{
 
     .showNav { left: 0 !important; }
 
-    
+
     .navBar .leadTo li{
         display: block;
     } 
@@ -459,6 +461,10 @@ section .aboutContent p{
         margin-top: 30px;
         margin-left: 30px;
         margin-right: 40px;
+    }
+    .skills .skillsContent .right {
+        width: calc(70%);
+        right: 50%;
     }
     .contact .contactContent form .field{
         margin: 15px 0;
