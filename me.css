@@ -80,7 +80,7 @@ html{
 /* Intro Section Style */
 .intro{
     display: flex;
-    background: url("images/10.jpg") no-repeat center;
+    background: url("images/11.jpg") no-repeat center;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
