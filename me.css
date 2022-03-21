@@ -474,6 +474,10 @@ section .aboutContent p{
     .projects .next{
         display: inline-block;
         padding: 10px 10px;
+        padding-bottom: 20px;
+    }
+    .projects h3 {
+        margin-top: 10px;
     }
     .projects .leftcol{
         margin-left: 30px;
@@ -485,6 +489,6 @@ section .aboutContent p{
     .projects img{
         width: 250%;
         margin-left: 0%;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 }  
