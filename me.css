@@ -170,8 +170,8 @@ section .aboutContent p{
     justify-content: space-evenly;
 }
 .skills p{
-    margin-bottom: 30px;
-    margin-left: 70px;
+    margin: 20px auto;
+    width: 50%;
 }
 .skills .skillsContent .left{
     width: calc(40%);
@@ -453,7 +453,9 @@ section .aboutContent p{
         align-items: center;
     }
     .skills p{
-        margin-left: 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .skills .skillsContent .left{
         width: calc(90%);
