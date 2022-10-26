@@ -134,7 +134,7 @@ section .heading{
     font-weight: 500;
     margin-bottom: 40px;
     padding-bottom: 20px;
-    margin-top: 20px;  /* Added by SG */
+    margin-top: 20px;  
 } 
 section .heading::before{
     content: "";
@@ -320,7 +320,7 @@ section .aboutContent p{
   }
   
   .experience .experienceContent .active, .collapsible:hover {
-    background-color: rgb(66, 95, 109);
+    background-color: rgb(42, 89, 112);
   }
   
   .experience .experienceContent .content {
